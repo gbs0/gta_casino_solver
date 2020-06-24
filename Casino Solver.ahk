@@ -87,7 +87,7 @@ Pmatch(N, XP1, YP1, XP2, YP2)
 	ImageSearch, FoundX, FoundY, %XP1%, %YP1%, %XP2%, %YP2%, *50 %A_ScriptDir%\%A_ScreenWidth%x%A_ScreenHeight%\%N%.bmp
         If ErrorLevel = 0 
 	{
-        ToolTip , Match%N%, FoundX, FoundY-20,%N%
+        ToolTip , Digital%N%, FoundX, FoundY-20,%N%
 	}
 	Else
 	{
@@ -100,7 +100,7 @@ Kmatch(N, XK1, YK1, XK2, YK2)
 	ImageSearch, FoundX, FoundY, %XK1%, %YK1%, %XK2%, %YK2%, *180 %A_ScriptDir%\%A_ScreenWidth%x%A_ScreenHeight%\key.bmp
         If ErrorLevel = 0 
 	{
-        ToolTip , Match%N%, FoundX, FoundY,%N%
+        ToolTip , Digital%N%, FoundX, FoundY,%N%
 	}
 }
 
